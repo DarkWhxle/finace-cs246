@@ -7,8 +7,10 @@ Original file is located at
     https://colab.research.google.com/drive/1jSC68xMjAU8yHE5Q6wbrXbkjhKgG0IyP
 """
 import sys
-{sys.executable} -m pip install matplotlib numpy pandas plotly streamlit
-setx PATH "%PATH%;C:\path\to\python\Scripts"
+import subprocess
+
+subprocess.check_call([sys.executable, "-m", "pip", "install", "matplotlib", "numpy", "pandas", "plotly", "streamlit"])
+
 
 
 
